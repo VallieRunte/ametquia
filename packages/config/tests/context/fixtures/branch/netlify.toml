@@ -1,0 +1,11 @@
+[build]
+command = "echo command"
+
+[context.testBranch]
+command = "echo commandTest"
+
+[functions]
+node_bundler = "esbuild"
+
+[context.testBranch.functions]
+node_bundler = "zisi"

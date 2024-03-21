@@ -1,0 +1,11 @@
+[build.environment]
+one = "one"
+
+[context.production.environment]
+two = "two"
+
+[functions.my-function]
+node_bundler = "esbuild"
+
+[context.testContext.functions.my-function]
+node_bundler = "zisi"

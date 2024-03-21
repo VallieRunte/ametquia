@@ -1,0 +1,75 @@
+{
+  "name": "ametquia",
+  "version": "1.17.0",
+  "description": "Netlify build module",
+  "main": "index.js",
+  "author": "AngieBayer",
+  "config": {
+    "eslint": "--ignore-path .gitignore --ignore-pattern \"packages/*/tests/**/snapshots/*.md\" --cache --format=codeframe --max-warnings=0 \"{packages,.github}/**/*.{js,md,html}\" \"*.{js,md,html}\" \".*.{js,md,html}\"",
+    "prettier": "--ignore-path .gitignore --loglevel=warn \"{packages,.github}/**/*.{js,md,yml,json,html}\" \"*.{js,yml,json,html}\" \".*.{js,yml,json,html}\" \"!**/package-lock.json\" \"!**/CHANGELOG.md\" \"!package-lock.json\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "ava": {
+    "files": [
+      "packages/**/tests/*.js",
+      "packages/**/tests/**/tests.js"
+    ],
+    "compileEnhancements": false,
+    "babel": false,
+    "verbose": true
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run format"
+    }
+  },
+  "keywords": [
+    "officiis",
+    "et",
+    "possimus",
+    "reprehenderit",
+    "linux",
+    "shell",
+    "bash",
+    "build",
+    "terminal",
+    "sint",
+    "debitis",
+    "serverless",
+    "continuous-integration",
+    "quod",
+    "ci",
+    "praesentium",
+    "plugins",
+    "continuous-testing",
+    "at",
+    "netlify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VallieRunte/ametquia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VallieRunte/ametquia.git/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
+    "@netlify/eslint-config-node": "^2.6.7",
+    "ava": "^2.4.0",
+    "lerna": "^3.22.1",
+    "nyc": "^15.0.0"
+  },
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "dependencies": {
+    "doloreset": "^1.0.0",
+    "inciduntlaboriosam": "^1.1.0",
+    "quisquamnecessitatibus": "^1.0.1"
+  }
+}

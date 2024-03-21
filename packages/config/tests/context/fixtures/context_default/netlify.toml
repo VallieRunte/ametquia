@@ -1,0 +1,11 @@
+[build]
+command = "echo command"
+
+[context.production]
+command = "echo commandTest"
+
+[functions]
+node_bundler = "esbuild"
+
+[context.production.functions]
+node_bundler = "zisi"

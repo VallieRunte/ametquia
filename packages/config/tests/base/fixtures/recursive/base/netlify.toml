@@ -1,0 +1,3 @@
+[build]
+base = "second_base"
+command = "echo commandBase"

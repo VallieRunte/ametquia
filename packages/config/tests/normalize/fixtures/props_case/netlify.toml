@@ -1,0 +1,13 @@
+[Build]
+Base = "base"
+Command = "gulp build"
+Functions = "functions"
+Edge_handlers = "edge-handlers"
+Ignore = "doIgnore"
+Publish = "publish"
+
+[Build.Environment]
+TEST = "test"
+
+[Build.Processing.css]
+bundle = true
